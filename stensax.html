@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="img/ropasc.jpg">
+    <title>Sten Sax Påse</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar">
+            <a href="index.html">Hem</a>
+            <a href="stensax.html">Sten Sax Påse</a>
+
+        </nav>
+
+        <main>
+            <p>
+            <h2>Klicka först på knappen nedan för att fylla i ditt namn.</h2>
+            </p>
+
+            <button class="knappen" onclick="knapp()">
+                <h3>Ange namn och lösenord</h3>
+            </button>
+            <div class="hej"></div>
+        </main>
+
+        <aside>
+            <button class="knappen" onclick="regler()">
+                <h3>Klicka här för att läsa reglerna</h3>
+            </button>
+            <p></p>
+            <p></p>
+        </aside>
+
+        <div id="game">
+        </div>
+
+        <div class="gamecontainer">
+
+            <div class="spelaren">
+                <p class="dittnamn">Detta är du.</p>
+
+                <img src="img/you.jpg" alt="You and Yourself"></a>
+
+                <p></p>
+                <p class="vannjag"></p>
+                <div>Dina poäng: </div>
+                <span class="dinapoints">0</span>
+            </div>
+
+            <div class="pooints">
+                <p>
+                <h2>Vem vinner?</h2>
+                </p>
+            </div>
+
+            <div class="highscore">
+                <ol id="bennysHighscore">
+                    <p class="h1">Highscore</p>
+                </ol>
+            </div>
+
+            <div class="datorn">
+                <p>Detta är datorn, det är en högst utvecklad AI robot.</p>
+                <img src="img/computer.jpg" alt="The Zombputer"></a>
+                <p class="vanndatorn"></p>
+                <div>AI Datorns poäng: </div>
+                <span class="comppoints">När datorn vinner så är du FCKED</span>
+                <p></p>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

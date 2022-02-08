@@ -1,0 +1,91 @@
+body{
+    background-color: linen;
+    height: 100vh;
+  }
+
+
+
+  nav{
+    position: sticky;
+    top : 0;
+    opacity: 95%;
+    background-color: linen;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid rgb(44, 44, 44);    
+  }
+    
+  nav a{
+    text-decoration: none;
+    margin: 2rem;
+    padding: 1rem;
+    border: solid 1px lightgrey;
+  }
+      
+  nav a:hover{
+    border: solid 1px red;
+  }
+
+  aside{
+      text-align: center;
+  }
+  
+
+.gamecontainer{
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: solid 3px red;
+    margin: 2rem;
+    gap: 2rem;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.gamecontainer img{
+    padding: 2rem;
+    width: auto;
+    max-width: 40rem;
+    /* border: solid 3px red; */
+}
+
+#game{
+  border: solid 3px grey ;
+}
+
+.knappen{
+  margin-left: 2rem;
+  background-color: pink;
+  border: solid 3px hotpink;
+  border-radius: 30%;
+  }
+
+.comppoints{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border: grey solid 2px;
+}
+
+.dinapoints{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border: grey solid 2px;
+}
+
+#game{
+  text-align: center;
+}
+
+.pooints{
+  border-left: solid 2px grey;
+  border-right: solid 2px grey;
+}
+.highscore{
+  text-align: center  ;
+  border-left: solid 2px grey;
+  border-right: solid 2px grey;
+}
+
+.h1{
+  font-size: larger;
+  font-weight: bold;
+}
