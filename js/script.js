@@ -1,27 +1,32 @@
 const url = 'https://rocksscissorsss-default-rtdb.europe-west1.firebasedatabase.app/highscore.json';
+const highscoreet = document.getElementById('bennysHighscore')
 
-//Fetchar ner datan från firebase:
+
+//Hämtar info firebase
+
+Trying - HighScore
 function testaSomFan() {
     fetch(url)
         .then(rr => rr.json())
         .then(dHighscore => {
-            console.log('Kollar allt som finns med i firebase', [dHighscore]);
+
+            const scoreArray = Object.values(dHighscore);
+
+            scoreArray.sort((a, b) => {
+                return b.highscore - a.highscore;
+            })
+
+            console.log(scoreArray)
+
+
             //Kollar highscore:
-            for (const highestScore in dHighscore) {
-                console.log(dHighscore[highestScore].highscore)
 
-                // document.querySelector(".bennysHighscore").innerHTML = dHighscore[highestScore].username + ": " + dHighscore[highestScore].highscore;
+            for (i = 0; i < 5; i++) {
+                const highscoreArray = scoreArray[i]
+                const li = document.createElement('li');
+                highscoreet.appendChild(li);
+                li.innerText = 'SPELARE   :' + '' + highscoreArray.username + ' ' + '|     POÄNG: ' + ' ' + highscoreArray.highscore;
 
-                const username = dHighscore[highestScore].username
-                const highscore = dHighscore[highestScore].highscore
-                // const time = dHighscore[highestScore].theTime
-
-                let node = document.createElement('li');
-                let textnode = document.createTextNode("Användarnamn: " + username + " - Poäng: " + highscore);
-                node.classList.add('highscoreLi');
-
-                node.appendChild(textnode);
-                document.getElementById('bennysHighscore').appendChild(node);
             }
         })
 }

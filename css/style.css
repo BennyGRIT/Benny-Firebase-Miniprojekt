@@ -82,7 +82,7 @@ body{
   border-right: solid 2px grey;
 }
 .highscore{
-  text-align: center  ;
+  text-align: left;
   border-left: solid 2px grey;
   border-right: solid 2px grey;
 }
