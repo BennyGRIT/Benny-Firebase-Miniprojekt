@@ -1,4 +1,6 @@
 const url = 'https://rocksscissorsss-default-rtdb.europe-west1.firebasedatabase.app/highscore.json';
+
+//Fetchar ner datan från firebase:
 function testaSomFan() {
     fetch(url)
         .then(rr => rr.json())
@@ -23,6 +25,7 @@ function testaSomFan() {
             }
         })
 }
+
 testaSomFan()
 let namn;
 let duVann = 0;
@@ -80,7 +83,7 @@ const generateComputerChoice = () => {
 
 for (let i = 0; i < choices.length; i++) {
     const button = document.createElement("button");
-    button.style.fontSize = "30px";
+    button.style.fontSize = "35px";
     button.style.marginLeft = "2rem"
     button.innerHTML = choices[i];
     button.addEventListener("click", handleClick);
@@ -149,6 +152,7 @@ const getResult = () => {
             headers: headerObject
         };
 
+        //Fetchar upp infon till firebase
         const url = 'https://rocksscissorsss-default-rtdb.europe-west1.firebasedatabase.app/highscore.json';
         fetch(url, init)
             .then(r => r.json())
