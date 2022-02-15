@@ -60,12 +60,14 @@ body{
   }
 
 .comppoints{
+  font-size: xx-large;
   padding-left: 3rem;
   padding-right: 3rem;
   border: grey solid 2px;
 }
 
 .dinapoints{
+  font-size: xx-large;
   padding-left: 3rem;
   padding-right: 3rem;
   border: grey solid 2px;
@@ -89,3 +91,5 @@ body{
   font-size: larger;
   font-weight: bold;
 }
+
+

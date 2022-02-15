@@ -1,5 +1,5 @@
 const url = 'https://rocksscissorsss-default-rtdb.europe-west1.firebasedatabase.app/highscore.json';
- const highscoreet = document.getElementById('bennysHighscore')
+const highscoreet = document.getElementById('bennysHighscore')
 
 
 //Hämtar info firebase
@@ -24,11 +24,11 @@ function testaSomFan() {
                 const highscoreArray = scoreArray[i]
                 const li = document.createElement('li');
                 highscoreet.appendChild(li);
-                li.innerText = 'SPELARE   :' +  '' + highscoreArray.username + ' ' + '|     POÄNG: ' + ' ' + highscoreArray.highscore;
-        
-              }
+                li.innerText = 'SPELARE   :' + '' + highscoreArray.username + ' ' + '|     POÄNG: ' + ' ' + highscoreArray.highscore;
+
+            }
         })
-};
+}
 
 testaSomFan()
 let namn;
@@ -87,7 +87,7 @@ const generateComputerChoice = () => {
 
 for (let i = 0; i < choices.length; i++) {
     const button = document.createElement("button");
-    button.style.fontSize = "30px";
+    button.style.fontSize = "35px";
     button.style.marginLeft = "2rem"
     button.innerHTML = choices[i];
     button.addEventListener("click", handleClick);
@@ -156,8 +156,7 @@ const getResult = () => {
             headers: headerObject
         };
 
-
-        //Skickar till Highscore firebase:
+        //Fetchar upp infon till firebase
         const url = 'https://rocksscissorsss-default-rtdb.europe-west1.firebasedatabase.app/highscore.json';
         fetch(url, init)
             .then(r => r.json())
