@@ -4,7 +4,6 @@ const highscoreet = document.getElementById('bennysHighscore')
 
 //Hämtar info firebase
 
-Trying - HighScore
 function testaSomFan() {
     fetch(url)
         .then(rr => rr.json())
