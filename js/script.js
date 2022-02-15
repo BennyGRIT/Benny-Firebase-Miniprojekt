@@ -161,7 +161,11 @@ const getResult = () => {
         const url = 'https://rocksscissorsss-default-rtdb.europe-west1.firebasedatabase.app/highscore.json';
         fetch(url, init)
             .then(r => r.json())
-            .then(d => console.log("la till highscore, eller?", d))
+            .then(d => {
+                console.log("la till highscore, eller?", d);
+                remove();
+                testaSomFan();
+            })
 
         datornVann = 0;
         duVann = 0;
